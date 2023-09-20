@@ -1,0 +1,42 @@
+body
+    background: red
+    header
+        background: green
+        nav
+            ul
+                display: flex
+                list-style: none
+                li
+                    margin: 1rem 1.3rem 1rem 0
+    main
+        display: grid
+        grid-template-columns: 2fr 10fr
+        section
+            article
+                display: grid
+                grid-template-columns: 1fr 3fr
+                grid-template-rows: 1fr
+                margin-bottom: 2rem 
+                h1
+                    grid-column: 2
+                    grid-row: 1
+                    padding: 0 0 0 2rem
+                img
+                    grid-column: 1
+                    grid-row: 1
+
+$small: 479px
+$medium-min: 480px
+$medium-max: 768px
+$large: 769px
+
+@media (max-width: $small)
+    body
+        background: orange
+        header 
+            display: none
+@media (min-width: $medium-min)
+    @media (max-width: $medium-max)
+        body
+            background: purple
+    

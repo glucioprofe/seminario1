@@ -1,0 +1,46 @@
+body {
+  background: red;
+}
+body header {
+  background: green;
+}
+body header nav ul {
+  display: flex;
+  list-style: none;
+}
+body header nav ul li {
+  margin: 1rem 1.3rem 1rem 0;
+}
+body main {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+body main section article {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 2rem;
+}
+body main section article h1 {
+  grid-column: 2;
+  grid-row: 1;
+  padding: 0 0 0 2rem;
+}
+body main section article img {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+@media (max-width: 479px) {
+  body {
+    background: orange;
+  }
+  body header {
+    display: none;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  body {
+    background: purple;
+  }
+}/*# sourceMappingURL=style.css.map */
