@@ -1,5 +1,5 @@
 body {
-  background: red;
+  background: #BAD9B5;
 }
 body header {
   background: green;
@@ -10,6 +10,9 @@ body header nav ul {
 }
 body header nav ul li {
   margin: 1rem 1.3rem 1rem 0;
+}
+body header nav ul li .brand {
+  width: 32px;
 }
 body main {
   display: grid;
